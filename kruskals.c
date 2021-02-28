@@ -65,11 +65,11 @@ void main()
        p->tail=ne;
        ne->top=p;
   }
-  printf("Enter the no: of edjes:");
+  printf("Enter the no: of edges:");
   scanf("%d",&e);
   adj=(struct edge*)malloc(e*sizeof(struct edge));
   A=(struct edge*)malloc(e*sizeof(struct edge));
-  printf("Enter the edjes\n");
+  printf("Enter the edges\n");
   printf("start end weight\n");
   c=-1;
   for(i=1;i<=e;i++)
@@ -97,7 +97,7 @@ void main()
 	count++;
       }
   }
-   printf("\nSpanning Tree edjes\n");
+   printf("\nSpanning Tree edges\n");
    sum=0;
   for(i=0;i<count;i++)
   {  printf("(%d->%d) w:%d\n",A[i].start,A[i].end,A[i].weight);
